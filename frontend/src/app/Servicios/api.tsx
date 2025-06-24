@@ -1,7 +1,7 @@
 import axios from 'axios';
 import axion from 'axios'
 
-const URL_API="http://localhost:5000";
+const URL_API="http://localhost:5000/";
 
 export const valorpromediocategoria= async ()=>{
 

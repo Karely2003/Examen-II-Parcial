@@ -1,5 +1,5 @@
 'use client'
-
+import {cantidadproductomarca} from '@/app/Servicios/api'
 import { useEffect, useState } from 'react';
 import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend} from 'chart.js';
@@ -25,7 +25,7 @@ export default function CantidadPorMarcaChart() {
   });
 
   useEffect(() => {
-    fetch('http://localhost:5000/cantidad-producto-marca')
+      cantidadproductomarca()
       .then(res => res.json())
       .then(data => {
         const labels = data.map((item: any) => item.brandCode);

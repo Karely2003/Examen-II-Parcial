@@ -7,7 +7,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         
         <Link href='/ValorPromedio'>Ir a la grafica valor promedio producto</Link>
-        <Link href='/CantidadProducto'>Ir a la grafica valor promedio producto</Link>    
+        <Link href='/CantidadProducto'>Ir a la grafica cantidad producto por marca</Link>    
 
       </main>
 
